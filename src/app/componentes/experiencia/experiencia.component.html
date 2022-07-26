@@ -1,0 +1,82 @@
+<div class="row">
+    <div class="col-lg-11">
+    <h1>Experiencia laboral </h1>
+        <button title= "Nueva experiencia" type="button" class="btn btn-secondary" routerLink="/nuevaexp" *ngIf="isLogged">
+            <i class="bi bi-plus-lg"> </i> 
+        </button>
+    </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>
+                        <h2>{{Experiencia.nombreE}}</h2>
+                    </td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button title= "Editar experiencia" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                            <i class="bi bi-pencil-fill"></i> </button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button title= "Eliminar experiencia" class="btn btn-danger" (click)="delete(Experiencia.id)">
+                            <i class="bi bi-trash-fill"></i> </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- CODIGO DE LA MAQUETA AL INICIO DEL PROYECTO
+     <div class="row">
+    <h1>EXPERIENCIA LABORAL</h1>
+    <div class="col-lg-1"> </div>
+    <div class="col-lg-11">
+        <ul>
+            <li>
+                <div class="col-lg-11">
+                    <img src="../../../assets/Megatone.jpg" id="megatone">
+                </div>
+                <h1>Megatone Rafaela</h1> - 
+                <h3>6 Meses</h3>
+            </li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptas optio vel, voluptate aut, nam sed laboriosam aliquid ut consequatur iste quibusdam a. Optio delectus voluptas provident ex explicabo expedita.
+            </p>
+        </ul>
+        <ul>
+            <li>
+                <div class="col-lg-11">
+                    <img src="../../../assets/FactorIQ.png" id="factoriq">
+                </div>
+                <h1>Factor IQ</h1> - 
+                <h3>2 años</h3>
+            </li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptas optio vel, voluptate aut, nam sed laboriosam aliquid ut consequatur iste quibusdam a. Optio delectus voluptas provident ex explicabo expedita.
+            </p>
+        </ul>
+        <ul>
+            <li>
+                <div class="col-lg-11">
+                    <img src="../../../assets/SancorSeguros.png" id="sancorseguros">
+                </div>
+                <h1>Sancor Seguros</h1> - 
+                <h3>5 años</h3>
+            </li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptas optio vel, voluptate aut, nam sed laboriosam aliquid ut consequatur iste quibusdam a. Optio delectus voluptas provident ex explicabo expedita.
+            </p>
+        </ul>
+        <ul>
+            <li>
+                <div class="col-lg-11">
+                    <img src="../../../assets/Servitambo.jpg" id="servitambo">
+                </div>
+                <h1>Servitambo SRL</h1> - 
+                <h3>Actualidad</h3>
+            </li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptas optio vel, voluptate aut, nam sed laboriosam aliquid ut consequatur iste quibusdam a. Optio delectus voluptas provident ex explicabo expedita.
+            </p>
+        </ul>
+    </div>
+</div>
+-->

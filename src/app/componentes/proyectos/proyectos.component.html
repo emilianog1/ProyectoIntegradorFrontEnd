@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-lg-11">
+        <h1>Proyectos Realizados </h1>
+        <button title= "Nuevo proyecto" type="button" class="btn btn-secondary" routerLink="/nuevopro" *ngIf="isLogged">
+            <i class="bi bi-plus-lg"> </i>
+        </button>
+    </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Proyecto of proy">
+                    <td>
+                        <h2>{{Proyecto.nombreP}}</h2>
+                    </td>
+                    <td>{{Proyecto.descripcionP}}</td>
+                    <td *ngIf="isLogged">
+                        <button title= "Editar proyecto" class="btn btn-light" routerLink="/editpro/{{Proyecto.id}}">
+                            <i class="bi bi-pencil-fill"></i></button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button title= "Eliminar proyecto" class="btn btn-danger" (click)="delete(Proyecto.id)">
+                            <i class="bi bi-trash-fill"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<!--CODIGO DE LA MAQUETA AL INICIO DEL PROYECTO
+<div class="row">
+    <h1>Proyectos Realizados</h1>
+    <div class="contenedor">
+        <div>
+            <h1>Argentina Programa</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam blanditiis consequatur explicabo nemo molestias minima obcaecati excepturi hic voluptatibus nobis at doloribus dolorum omnis vero commodi, ad, ut est inventore!</p>
+        </div>
+    </div>
+</div>
+-->
