@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
 export class SEducacionService {
 
   //expURL = 'http://localhost:8080/edu/';
-  expURL = 'https://hosting-angular-7d2a7.web.app/edu/'
+  expURL = 'https://proyectofinaleg.herokuapp.com/edu/'
 
   constructor(private httpClient: HttpClient) { }
 

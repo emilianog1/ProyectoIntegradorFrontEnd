@@ -8,7 +8,7 @@ import { Proyectos } from '../model/proyectos';
 })
 export class SProyectosService {
   //expURL = 'http://localhost:8080/project/';
-  expURL = 'https://hosting-angular-7d2a7.web.app/project/'
+  expURL = 'https://proyectofinaleg.herokuapp.com/project/'
 
   constructor(private httpClient: HttpClient) { }
 
