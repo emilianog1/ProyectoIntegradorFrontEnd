@@ -9,7 +9,7 @@ import { persona } from '../model/persona.model';
 export class PersonaService {
 
   //URL = 'http://localhost:8080/personas/';
-  URL = 'https://hosting-angular-7d2a7.web.app/';
+  URL = 'https://hosting-angular-7d2a7.web.app/personas/';
   constructor(private http: HttpClient) { }
 
   
