@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/proyecto_intgrador-gilli-emiliano",
+    "public": "dist/proyecto-intgrador-gilli-emiliano",
     "ignore": [
       "firebase.json",
       "**/.*",
