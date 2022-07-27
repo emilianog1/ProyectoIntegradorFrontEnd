@@ -8,7 +8,8 @@ import { Educacion } from '../model/educacion';
 })
 export class SEducacionService {
 
-  expURL = 'http://localhost:8080/edu/';
+  //expURL = 'http://localhost:8080/edu/';
+  expURL = 'https://hosting-angular-7d2a7.web.app/'
 
   constructor(private httpClient: HttpClient) { }
 

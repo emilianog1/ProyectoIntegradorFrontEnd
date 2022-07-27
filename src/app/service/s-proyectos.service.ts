@@ -7,7 +7,8 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class SProyectosService {
-  expURL = 'http://localhost:8080/project/';
+  //expURL = 'http://localhost:8080/project/';
+  expURL = 'https://hosting-angular-7d2a7.web.app/'
 
   constructor(private httpClient: HttpClient) { }
 

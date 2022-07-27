@@ -7,7 +7,8 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SSkillService {
-  expURL = 'http://localhost:8080/skill/';
+  //expURL = 'http://localhost:8080/skill/';
+  expURL = 'https://hosting-angular-7d2a7.web.app/'
 
   constructor(private httpClient: HttpClient) { }
 
