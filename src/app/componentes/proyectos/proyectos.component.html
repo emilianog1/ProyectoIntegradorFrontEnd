@@ -12,9 +12,9 @@
             <tbody>
                 <tr *ngFor="let Proyecto of proy">
                     <td>
-                        <h2>{{Proyecto.nombreP}}</h2>
+                        <h2 id="nombrepro">{{Proyecto.nombreP}}</h2>
                     </td>
-                    <td>{{Proyecto.descripcionP}}</td>
+                    <td id="descripcionpro">{{Proyecto.descripcionP}}</td>
                     <td *ngIf="isLogged">
                         <button title= "Editar proyecto" class="btn btn-light" routerLink="/editpro/{{Proyecto.id}}">
                             <i class="bi bi-pencil-fill"></i></button>
