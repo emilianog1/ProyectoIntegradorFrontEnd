@@ -9,4 +9,5 @@ div{
 }
 h1, h3{
     display: inline;
+    font-style: italic;
 }

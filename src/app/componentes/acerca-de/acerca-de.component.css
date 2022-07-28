@@ -5,6 +5,10 @@ div{
     /*background-color: #30c977;*/
     background: #72FCF8;
 }
+h1, h3{
+    display: inline;
+    font-style: italic;
+}
 #nombre{
     font-weight: bold;
     margin-top: 30%;
