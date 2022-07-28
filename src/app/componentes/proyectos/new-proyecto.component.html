@@ -16,8 +16,10 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="descripcionP">Descripcion del proyecto</label>
-                                                <input type="text" class="form-control" id="descripcionP"
-                                                    name="descripcionP" [(ngModel)]="descripcionP" required>
+                                                <textarea type="text" class="form-control" id="descripcionP"
+                                                    maxLength="240" size="100" rows="10" name="descripcionP"
+                                                    [(ngModel)]="descripcionP" required>
+                                                </textarea>
                                             </div>
                                             <button class="btn btn-primary">
                                                 Agregar Proyecto
